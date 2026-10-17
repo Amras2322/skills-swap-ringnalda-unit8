@@ -84,3 +84,66 @@ footer {
     padding: 6px 12px;
     font-size: 0.9rem;
 }
+
+#skills h2 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.skill-description {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.skill-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #edf2f7;
+    font-size: 0.9rem;
+}
+
+.skill-provider {
+    color: #718096;
+    font-weight: 500;
+}
+
+.skill-price {
+    font-weight: 700;
+    color: #2b6cb0;
+}
+
