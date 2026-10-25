@@ -1,0 +1,22 @@
+{
+  "name": "skills-swap-ringnalda-unit8",
+  "version": "1.0.0",
+  "description": "Skill Swap is a peer-to-peer platform where college students exchange skills. One student teaches a subject while the other pays cash or trades an hour of their own expertise. Students create a public profile with their name, bio, skills, and hourly rate; seekers find them through a keyword search and message before booking a session.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amras2322/skills-swap-ringnalda-unit8.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Amras2322/skills-swap-ringnalda-unit8/issues"
+  },
+  "homepage": "https://github.com/Amras2322/skills-swap-ringnalda-unit8#readme",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
