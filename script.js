@@ -20,3 +20,10 @@ categoryFilter.addEventListener('change', () => {
         }
     });
 });
+
+document.getElementById('calculateCostButton').addEventListener('click', () => {
+    const rate = parseFloat(document.getElementById('hourlyRate').value);
+    const hours = parseFloat(document.getElementById('hours').value);
+    const totalCost = calculateTotalCosts(rate, hours);
+    document.getElementById('totalCost').textContent = 'Total Cost: $' + totalCost;
+});
