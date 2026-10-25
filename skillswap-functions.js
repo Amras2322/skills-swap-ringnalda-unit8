@@ -12,15 +12,14 @@ function filterSkillsByCategory(skills, category) {
   return skills.filter(skill => skill.category === category);
 }
 
-
-filterSkillsByCategory(skills, 'Programming'); 
+//filterSkillsByCategory(skills, 'Programming'); 
 /* [
   { title: 'Python Tutoring', category: 'Programming', price: 20 },
   { title: 'Web Development', category: 'Programming', price: 25 }
 ]
 */
 
-filterSkillsByCategory(skills, 'All'); 
+//filterSkillsByCategory(skills, 'All'); 
 /*
 [
   { title: 'Python Tutoring', category: 'Programming', price: 20 },
@@ -30,8 +29,10 @@ filterSkillsByCategory(skills, 'All');
 ];
 */
 
-filterSkillsByCategory(skills, 'Cooking'); // []
+//filterSkillsByCategory(skills, 'Cooking'); //[ ];
 
 
 // Keep at bottom of file
-module.exports = { filterSkillsByCategory};
+if (typeof module !== 'undefined') {
+    module.exports = { filterSkillsByCategory };
+};
