@@ -175,3 +175,78 @@ footer {
     color: #2b6cb0;
 }
 
+#cost-calculator {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+#cost-calculator h2 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+#cost-calculator p {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+#cost-calculator form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#cost-calculator label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+#cost-calculator input[type="number"] {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    color: #2d3748;
+    font-family: inherit;
+    width: 120px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cost-calculator input[type="number"]:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+#calculateCostButton {
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#calculateCostButton:hover {
+    background-color: #2b6cb0;
+}
+
+#totalCost {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin-left: 4px;
+}
