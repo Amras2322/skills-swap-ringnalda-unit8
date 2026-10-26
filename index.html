@@ -27,50 +27,78 @@
         <section id="skills">
             <h2>Skill Offerings</h2>
 
-            <!-- dropdown to filter by category, calls filterSkillsByCategory when changed -->
-            <select id="categoryFilter">
-                <option value="All">All</option>
-                <option value="Programming">Programming</option>
-                <option value="Career">Career</option>
-                <option value="Music">Music</option>
-            </select>
-
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <h3 class="skill-title">Python Tutoring</h3>
-                    <p class="skill-description">Learn Python fundamentals with hands-on projects and pair-programming.</p>
-                    <div class="skill-meta">
-                        <span class="skill-provider">Provider: Alex Chen</span>
-                        <span class="skill-price">$20 / hr</span>
+            <div class="skills-layout">
+                <!-- Filters & Matcher Sidebar -->
+                <aside class="skills-sidebar">
+                    <div class="sidebar-section filter-card">
+                        <h3>Filter Skills</h3>
+                        <label for="categoryFilter">Category:</label>
+                        <select id="categoryFilter">
+                            <option value="All">All</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Career">Career</option>
+                            <option value="Music">Music</option>
+                        </select>
                     </div>
-                </article>
 
-                <article class="skill-card">
-                    <h3 class="skill-title">Resume Review</h3>
-                    <p class="skill-description">Review your resume and provide feedback to help you land your dream job.</p>
-                    <div class="skill-meta">
-                        <span class="skill-provider">Provider: Maria Garcia</span>
-                        <span class="skill-price">$0 / hr</span>
-                    </div>
-                </article>
+                    <section id="skill-matcher" class="sidebar-section matcher-card">
+                        <h3>Find My Match</h3>
+                        <p>Enter category and max budget to match skills</p>
+                        <div class="matcher-controls">
+                            <label for="matchCategory">Category:</label>
+                            <select id="matchCategory">
+                                <option value="Programming">Programming</option>
+                                <option value="Career">Career</option>
+                                <option value="Music">Music</option>
+                            </select>
+                            <label for="matchMaxPrice">Max Price ($):</label>
+                            <input type="number" id="matchMaxPrice" name="matchMaxPrice" min="0" placeholder="e.g. 20">
+                            <button type="button" id="findMatchButton">Find Match</button>
+                        </div>
+                        <div id="matchResults"></div>
+                    </section>
+                </aside>
 
-                <article class="skill-card">
-                    <h3 class="skill-title">Web Development</h3>
-                    <p class="skill-description">Learn the fundamentals of web development, including HTML, CSS, and JavaScript.</p>
-                    <div class="skill-meta">
-                        <span class="skill-provider">Provider: Liam Smith</span>
-                        <span class="skill-price">$25 / hr</span>
-                    </div>
-                </article>
+                <!-- Skills Offerings Grid -->
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <h3 class="skill-title">Python Tutoring</h3>
+                            <p class="skill-description">Learn Python fundamentals with hands-on projects and pair-programming.</p>
+                            <div class="skill-meta">
+                                <span class="skill-provider">Provider: Alex Chen</span>
+                                <span class="skill-price">$20 / hr</span>
+                            </div>
+                        </article>
 
-                <article class="skill-card">
-                    <h3 class="skill-title">Guitar Lessons</h3>
-                    <p class="skill-description">Learn chords, strumming patterns, and how to play your favorite songs in structured 45-minute sessions.</p>
-                    <div class="skill-meta">
-                        <span class="skill-provider">Provider: Elena Rostova</span>
-                        <span class="skill-price">$15 / hr</span>
+                        <article class="skill-card">
+                            <h3 class="skill-title">Resume Review</h3>
+                            <p class="skill-description">Review your resume and provide feedback to help you land your dream job.</p>
+                            <div class="skill-meta">
+                                <span class="skill-provider">Provider: Maria Garcia</span>
+                                <span class="skill-price">$0 / hr</span>
+                            </div>
+                        </article>
+
+                        <article class="skill-card">
+                            <h3 class="skill-title">Web Development</h3>
+                            <p class="skill-description">Learn the fundamentals of web development, including HTML, CSS, and JavaScript.</p>
+                            <div class="skill-meta">
+                                <span class="skill-provider">Provider: Liam Smith</span>
+                                <span class="skill-price">$25 / hr</span>
+                            </div>
+                        </article>
+
+                        <article class="skill-card">
+                            <h3 class="skill-title">Guitar Lessons</h3>
+                            <p class="skill-description">Learn chords, strumming patterns, and how to play your favorite songs in structured 45-minute sessions.</p>
+                            <div class="skill-meta">
+                                <span class="skill-provider">Provider: Elena Rostova</span>
+                                <span class="skill-price">$15 / hr</span>
+                            </div>
+                        </article>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
         <section id="cost-calculator">
