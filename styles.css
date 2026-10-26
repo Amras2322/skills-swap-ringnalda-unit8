@@ -16,7 +16,7 @@ body {
 
 main {
     flex: 1;
-    max-width: 960px;
+    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     padding: 24px 16px;
@@ -92,6 +92,7 @@ footer {
 }
 
 #categoryFilter {
+    width: 100%;
     appearance: none;
     background-color: #ffffff;
     border: 1px solid #cbd5e0;
@@ -101,7 +102,7 @@ footer {
     color: #2d3748;
     font-family: inherit;
     cursor: pointer;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     background-repeat: no-repeat;
@@ -249,4 +250,159 @@ footer {
     font-weight: 700;
     color: #2b6cb0;
     margin-left: 4px;
+}
+
+.skills-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 8px;
+}
+
+.skills-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-section {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-section h3 {
+    font-size: 1.15rem;
+    color: #2d3748;
+    margin-bottom: 6px;
+}
+
+.sidebar-section p {
+    font-size: 0.88rem;
+    color: #718096;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.sidebar-section label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+.sidebar-section select,
+.sidebar-section input[type="number"] {
+    width: 100%;
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    color: #2d3748;
+    font-family: inherit;
+    outline: none;
+    margin-bottom: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-section select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23718096' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 36px;
+}
+
+.sidebar-section select:focus,
+.sidebar-section input[type="number"]:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.sidebar-section #categoryFilter {
+    margin-bottom: 0;
+}
+
+.matcher-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+#findMatchButton {
+    width: 100%;
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#findMatchButton:hover {
+    background-color: #2b6cb0;
+}
+
+#matchResults {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.match-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.match-card h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.match-category {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #718096;
+    margin-right: 8px;
+}
+
+.match-price {
+    font-weight: 700;
+    color: #2b6cb0;
+    font-size: 0.85rem;
+}
+
+.no-matches {
+    color: #718096;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.skills-content {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-layout {
+        flex-direction: column;
+    }
+    .skills-sidebar {
+        width: 100%;
+    }
 }
